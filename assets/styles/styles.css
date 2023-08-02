@@ -4,23 +4,10 @@
     font-family: "Hanken Grotesk";
 }
 
-/*.row{
-    place-items: center;
-}*/
-
 .resultados-y-sumario{
     display: flex;
     justify-content: center;
 }
-
-/*@media (min-width: 1668px) and (max-width: 2468px){
-    .resultados-y-sumario{
-        padding: 200px 500px;
-    }
-}*/
-
-
-
 
 /*-------SECCIÓN RESULTADOS-------*/
 
@@ -28,7 +15,6 @@
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 20px;
     display: flex;
-    /*align-items: center;*/
     flex-direction: column;
 }
 
@@ -38,7 +24,6 @@
 
 .resultados-y-sumario .resultados .porcentaje{
     background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-    /* padding: 20px 20px 20px 20px; */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -53,6 +38,89 @@
 .resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
     margin: 0px;
 }
+
+
+
+
+/*-------SECCIÓN SUMARIO-------*/
+
+.resultados-y-sumario .sumario{
+    background: rgb(219, 219, 219);
+    border-radius: 20px;
+    display: grid;
+    justify-items: stretch;
+}
+
+.resultados-y-sumario .sumario .titulo{
+    text-align: left;
+}
+
+.resultados-y-sumario .sumario .estado{
+    border-radius: 10px;
+    text-align: left;
+}
+
+.resultados-y-sumario .sumario .estado .titulo-estado{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resultados-y-sumario .sumario .reaccion{
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .memoria{
+    background-color: rgba(255, 196, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .verbal{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .visual{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.resultados-y-sumario .sumario .reaccion .titulo-estado{
+    color: rgb(255, 85, 85);
+}
+
+.resultados-y-sumario .sumario .memoria .titulo-estado{
+    color: rgb(252, 182, 47);
+}
+
+.resultados-y-sumario .sumario .verbal .titulo-estado{
+    color: rgb(0, 187, 143);
+}
+
+.resultados-y-sumario .sumario .visual .titulo-estado{
+    color: rgb(47, 64, 216);
+}
+
+.resultados-y-sumario .sumario .estado .valor{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.resultados-y-sumario .sumario .estado .valor .max-valor{
+    color: rgb(150, 150, 150);
+}
+
+.resultados-y-sumario .sumario .boton-continuar{
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(11, 0, 63);
+}
+
+
+
+
+/*-------ATRIBUTOS RESPONSIVE-------*/
 
 @media (max-width: 576px){
     .resultados-y-sumario{
@@ -201,7 +269,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1439px){
+@media (min-width: 768px) and (max-width: 1440px){
     .resultados-y-sumario{
         padding: 100px 50px;
     }
@@ -280,7 +348,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px){
+@media (min-width: 1024px) and (max-width: 1440px){
     .resultados-y-sumario .resultados{
         max-width: 400px;
     }
@@ -290,7 +358,7 @@
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1441px){
     .resultados-y-sumario{
         padding: 300px 0px;
     }
@@ -363,92 +431,6 @@
         padding: 20px;
         font-size: 20px;
     }
-}
-
-
-
-
-
-
-.resultados-y-sumario .sumario{
-    background: rgb(219, 219, 219);
-    border-radius: 20px;
-    display: grid;
-    justify-items: stretch;
-}
-
-.resultados-y-sumario .sumario .titulo{
-    text-align: left;
-}
-
-.resultados-y-sumario .sumario .estado{
-    border-radius: 10px;
-    text-align: left;
-}
-
-.resultados-y-sumario .sumario .estado .titulo-estado{
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-/*.resultados-y-sumario .sumario .estado p .titulo-estado .titulo-texto{
-    margin: 10px 10px 0px 10px;
-}*/
-
-
-
-
-
-.resultados-y-sumario .sumario .reaccion{
-    background-color: rgba(255, 0, 0, 0.1);
-}
-
-.resultados-y-sumario .sumario .memoria{
-    background-color: rgba(255, 196, 0, 0.1);
-}
-
-.resultados-y-sumario .sumario .verbal{
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-.resultados-y-sumario .sumario .visual{
-    background-color: rgba(0, 0, 255, 0.1);
-}
-
-.resultados-y-sumario .sumario .reaccion .titulo-estado{
-    color: rgb(255, 85, 85);
-}
-
-.resultados-y-sumario .sumario .memoria .titulo-estado{
-    color: rgb(252, 182, 47);
-}
-
-.resultados-y-sumario .sumario .verbal .titulo-estado{
-    color: rgb(0, 187, 143);
-}
-
-.resultados-y-sumario .sumario .visual .titulo-estado{
-    color: rgb(47, 64, 216);
-}
-
-.resultados-y-sumario .sumario .estado .valor{
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-}
-
-.resultados-y-sumario .sumario .estado .valor .max-valor{
-    color: rgb(150, 150, 150);
-}
-
-.resultados-y-sumario .sumario .boton-continuar{
-    color: white;
-    border-radius: 50px;
-    background-color: rgb(11, 0, 63);
 }
 
 
