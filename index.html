@@ -14,91 +14,62 @@
     <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
-    <div class="resultados-y-sumario row mx-auto text-center" id="resultados-y-sumario">
-        <div class="resultados col-sm-6 text-white align-items-center" id="resultados">
-            <h2 class="titulo color-gris" id="titulo">Your Result</h2>
-            <div class="porcentaje" id="porcentaje">
-                <h1>76</h1>
-                <p class="porcentaje-limite color-gris">of 100</p>
+    <div class="resultados-y-sumario" id="resultados-y-sumario">
+        <div class="resultados col-sm-6 text-white text-center" id="resultados">
+            <p class="titulo" id="titulo">Your Result</p>
+            <div class="porcentaje-circulo">
+                <div class="porcentaje-container" id="porcentaje-container">
+                    <p class="porcentaje">76</p>
+                    <p class="porcentaje-limite">of 100</p>
+                </div>
             </div>
             
-            <div class="informe-resultado" id="informe-resultado">
-                <h3>Great</h3>
-                <p class="color-gris">You scored higher than 65% of the people who have taken these tests.</p>
-            </div>
-            
+            <h1>Great</h1>
+            <p class="informe-resultado">You scored higher than 65% of the people who have taken these tests.</p> 
         </div>
 
-        <div class="sumario col-sm-6 align-items-center" id="sumario">
+        <div class="sumario col-sm-6" id="sumario">
 
-            <h2 class="titulo" id="titulo">Summary</h2>
+            <p class="titulo" id="titulo">Summary</p>
 
-            <div class="row estado reaccion" id="reaccion">
-                <div class="titulo-estado col-6" id="titulo-estado">
-                    <img src="assets/images/icon-reaction.svg" class="foto-titulo-estado" id="foto-titulo-estado" alt="Foto no encontrada">
-                    <span class="titulo-estado-descripcion">
+            <div class="row test reaccion">
+                <div class="nombre-test nombre-reaccion col-6">
+                    <img src="assets/images/icon-reaction.svg" alt="Foto no encontrada">
+                    <p class="nombre-test-reaccion">
                         Reaction
-                    </span>
+                    </p>
                 </div>
-                <div class="valor col-6" id="valor">
-                    <span>
-                        80 
-                        <span class="max-valor" id="max-valor">
-                            / 100
-                        </span>
-                    </span>
-                </div>
+                <p class="puntaje col-6" id="puntaje"><span>80<span>/ 100</span>
             </div>
 
-            <div class="row estado memoria" id="memoria">
-                <div class="titulo-estado col-6" id="titulo-estado">
-                    <img src="assets/images/icon-memory.svg" class="foto-titulo-estado" id="foto-titulo-estado" alt="Foto no encontrada">
-                    <span class="titulo-estado-descripcion">
+            <div class="row test memoria">
+                <div class="nombre-test nombre-memoria col-6">
+                    <img src="assets/images/icon-memory.svg" alt="Foto no encontrada">
+                    <p class="nombre-test-memoria">
                         Memory
-                    </span>
+                    </p>
                 </div>
-                <div class="valor col-6" id="valor">
-                    <span>
-                        92 
-                        <span class="max-valor" id="max-valor">
-                            / 100
-                        </span>
-                    </span>
-                </div>
+                <p class="puntaje col-6" id="puntaje"><span>92<span>/ 100</span>
             </div>
 
-            <div class="row estado verbal" id="verbal">
-                <div class="titulo-estado col-6" id="titulo-estado">
-                    <img src="assets/images/icon-verbal.svg" class="foto-titulo-estado" id="foto-titulo-estado" alt="Foto no encontrada">
-                    <span class="titulo-estado-descripcion">
+            <div class="row test verbal">
+                <div class="nombre-test nombre-verbal col-6">
+                    <img src="assets/images/icon-verbal.svg" alt="Foto no encontrada">
+                    <p class="nombre-test-verbal">
                         Verbal
-                    </span>
+                    </p>
                 </div>
-                <div class="valor col-6" id="valor">
-                    <span>
-                        61 
-                        <span class="max-valor" id="max-valor">
-                            / 100
-                        </span>
-                    </span>
-                </div>
+                <p class="puntaje col-6" id="puntaje"><span>61<span>/ 100</span>
             </div>
 
-            <div class="row estado visual" id="visual">
-                <div class="titulo-estado col-6" id="titulo-estado">
-                    <img src="assets/images/icon-visual.svg" class="foto-titulo-estado" id="foto-titulo-estado" alt="Foto no encontrada">
-                    <span class="titulo-estado-descripcion">
+            <div class="row test visual">
+                <div class="nombre-test nombre-visual col-6">
+                    <img src="assets/images/icon-visual.svg" alt="Foto no encontrada">
+                    <p class="nombre-test-visual">
                         Visual
-                    </span>
+                    </p>
                 </div>
-                <div class="valor col-6" id="valor">
-                    <span>
-                        72 
-                        <span class="max-valor" id="max-valor">
-                            / 100
-                        </span>
-                    </span>
-                </div>
+                <p class="puntaje col-6" id="puntaje"><span>72<span>/ 100</span>
             </div>
             
             <div class="boton-continuar" id="boton-continuar">
