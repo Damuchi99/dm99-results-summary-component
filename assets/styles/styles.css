@@ -3,8 +3,8 @@
 *{
     font-family: "Hanken Grotesk";
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -84,26 +84,60 @@ body {
 /*-------SECCIÓN SUMARIO-------*/
 
 .resultados-y-sumario .sumario{
-    display: grid;
-    justify-items: stretch;
-    align-content: space-evenly;
+    width: 200px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .resultados-y-sumario .sumario .titulo{
+    width: 100%;
+    font-size: 18px; /*de momento fijo*/
+    font-weight: 700;
+    margin-bottom: 15px;
     text-align: left;
 }
 
-.resultados-y-sumario .sumario .estado{
+.resultados-y-sumario .sumario .test{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-right: 10px;
     border-radius: 10px;
-    text-align: left;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
 }
 
-.resultados-y-sumario .sumario .estado .titulo-estado{
+.resultados-y-sumario .sumario .test .nombre-test{
+    display: flex;
+}
+
+.resultados-y-sumario .sumario .test .nombre-test .test-icono{
+    padding-right: 5px;
+}
+
+.resultados-y-sumario .sumario .test .nombre-test p{
     margin: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 14px;
+}
+
+.resultados-y-sumario .sumario .test .puntaje{
+    font-weight: 500;
+    color: grey;
+    text-align: right;
+    margin: 0px;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.resultados-y-sumario .sumario .test .puntaje span{
+    color: black;
 }
 
 .resultados-y-sumario .sumario .reaccion{
@@ -122,53 +156,37 @@ body {
     background-color: rgba(0, 0, 255, 0.1);
 }
 
-.resultados-y-sumario .sumario .reaccion .titulo-estado{
+.resultados-y-sumario .sumario .reaccion .nombre-test-reaccion{
     color: rgb(255, 85, 85);
 }
 
-.resultados-y-sumario .sumario .memoria .titulo-estado{
+.resultados-y-sumario .sumario .memoria .nombre-test-memoria{
     color: rgb(252, 182, 47);
 }
 
-.resultados-y-sumario .sumario .verbal .titulo-estado{
+.resultados-y-sumario .sumario .verbal .nombre-test-verbal{
     color: rgb(0, 187, 143);
 }
 
-.resultados-y-sumario .sumario .visual .titulo-estado{
+.resultados-y-sumario .sumario .visual .nombre-test-visual{
     color: rgb(47, 64, 216);
-}
-
-.resultados-y-sumario .sumario .estado .valor{
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-}
-
-.resultados-y-sumario .sumario .estado .valor .max-valor{
-    color: rgb(150, 150, 150);
 }
 
 .resultados-y-sumario .sumario .boton-continuar{
     color: white;
     border-radius: 50px;
     background-color: rgb(11, 0, 63);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-
-
-
-/*-------ATRIBUTOS RESPONSIVE-------*/
-
-@media (min-width: 375px){
-    .resultados-y-sumario .sumario .boton-continuar{
-        font-size: 20px;
-    }
+.resultados-y-sumario .sumario .boton-continuar p{
+    margin: 0px;
 }
-
-
-
 
 /*------CREDITOS------*/
 
