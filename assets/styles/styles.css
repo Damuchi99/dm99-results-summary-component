@@ -2,11 +2,27 @@
 
 *{
     font-family: "Hanken Grotesk";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .resultados-y-sumario{
     display: flex;
     justify-content: center;
+    box-shadow: 5px 5px 20px rgb(216, 216, 216);
+    width: 500px; /*de momento fijo*/
+    height: 350px; /*de momento fijo*/
+    border-radius: 20px;
 }
 
 /*-------SECCIÓN RESULTADOS-------*/
@@ -16,39 +32,62 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /*de momento fijo*/
 }
 
-.resultados-y-sumario .resultados .color-gris{
-    color: rgba(255, 255, 255, 0.7);
+.resultados-y-sumario .resultados .titulo{
+    margin: 20px;
+    font-size: 18px; /*de momento fijo*/
 }
 
-.resultados-y-sumario .resultados .porcentaje{
+.resultados-y-sumario .resultados .porcentaje-circulo{
+    width: 120px;
+    height: 120px;
     background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     border-radius: 50%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.resultados-y-sumario .resultados .porcentaje h1{
-    font-size: 72px;
-    font-weight: bold;
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container{
+    margin: auto;
 }
 
-.resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container .porcentaje{
+    font-weight: 700;
+    font-size: 40px; /*de momento fijo*/
     margin: 0px;
 }
 
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container .porcentaje-limite{
+    font-size: 10px;
+    margin: 0px;
+}
 
+.resultados-y-sumario .resultados h1{
+    margin: 20px;
+    font-size: 22px; /*de momento fijo*/
+    font-weight: 700;
+}
 
+.resultados-y-sumario .resultados .informe-resultado{
+    width: 175px;
+    font-size: 12px;
+    margin: auto;
+    padding-bottom: 30px;
+}
 
 /*-------SECCIÓN SUMARIO-------*/
 
 .resultados-y-sumario .sumario{
-    background: rgb(219, 219, 219);
-    border-radius: 20px;
     display: grid;
     justify-items: stretch;
+    align-content: space-evenly;
+    justify-content: center;
 }
 
 .resultados-y-sumario .sumario .titulo{
@@ -122,313 +161,8 @@
 
 /*-------ATRIBUTOS RESPONSIVE-------*/
 
-@media (max-width: 576px){
-    .resultados-y-sumario{
-        padding: 0px 0px;
-        margin: 0px;
-    }
-
-    .resultados-y-sumario .resultados{
-        padding: 30px;
-    }
-
-    .resultados-y-sumario .resultados .titulo{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje{
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje h1{
-        font-size: 48px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
-        font-size: 12px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado{
-        font-size: 12px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado h3{
-        font-size: 26px;
-        margin-bottom: 10px;
-    }
-
-    .resultados-y-sumario .sumario{
-        padding: 30px;
-    }
-
-    .resultados-y-sumario .sumario .titulo{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .sumario .estado{
-        margin: 10px 0px;
-        padding: 0px 0px;
-        height: 40px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado{
-        font-size: 14px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado .foto-titulo-estado{
-        width: 15px;
-    }
-    
-    .resultados-y-sumario .sumario .estado .titulo-estado .titulo-estado-descripcion{
-        margin-left: 5px;
-    }
-
-    .resultados-y-sumario .sumario .estado .valor{
-        font-size: 14px;
-    }
-
+@media (min-width: 375px){
     .resultados-y-sumario .sumario .boton-continuar{
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px){
-    .resultados-y-sumario{
-        padding: 50px 0px;
-    }
-
-    .resultados-y-sumario .resultados{
-        padding: 30px;
-    }
-
-    .resultados-y-sumario .resultados .titulo{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje{
-        width: 150px;
-        height: 150px;
-        margin: 40px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje h1{
-        font-size: 48px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
-        font-size: 12px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado{
-        font-size: 12px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado h3{
-        font-size: 26px;
-        margin-bottom: 20px;
-    }
-
-    .resultados-y-sumario .sumario{
-        padding: 30px;
-    }
-
-    .resultados-y-sumario .sumario .titulo{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .sumario .estado{
-        margin: 5px 0px;
-        padding: 0px 0px;
-        height: 50px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado{
-        font-size: 14px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado .foto-titulo-estado{
-        width: 15px;
-    }
-    
-    .resultados-y-sumario .sumario .estado .titulo-estado .titulo-estado-descripcion{
-        margin-left: 5px;
-    }
-
-    .resultados-y-sumario .sumario .estado .valor{
-        font-size: 14px;
-    }
-
-    .resultados-y-sumario .sumario .boton-continuar{
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1440px){
-    .resultados-y-sumario{
-        padding: 100px 50px;
-    }
-
-    .resultados-y-sumario .resultados{
-        padding: 40px;
-    }
-
-    .resultados-y-sumario .resultados .titulo{
-        font-size: 24px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje{
-        width: 200px;
-        height: 200px;
-        margin: 40px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje h1{
-        font-size: 72px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado h3{
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    .resultados-y-sumario .sumario{
-        padding: 40px;
-    }
-
-    .resultados-y-sumario .sumario .titulo{
-        font-size: 24px;
-    }
-
-    .resultados-y-sumario .sumario .estado{
-        margin: 10px 0px;
-        padding: 5px 0px;
-        height: 50px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado{
-        font-size: 18px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado .foto-titulo-estado{
-        width: 20px;
-    }
-    
-    .resultados-y-sumario .sumario .estado .titulo-estado .titulo-estado-descripcion{
-        margin-left: 10px;
-    }
-
-    .resultados-y-sumario .sumario .estado .valor{
-        font-size: 16px;
-    }
-
-    .resultados-y-sumario .sumario .boton-continuar{
-        margin-top: 30px;
-        padding: 10px;
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px){
-    .resultados-y-sumario .resultados{
-        max-width: 350px;
-    }
-    
-    .resultados-y-sumario .sumario{
-        max-width: 350px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px){
-    .resultados-y-sumario .resultados{
-        max-width: 400px;
-    }
-    
-    .resultados-y-sumario .sumario{
-        max-width: 400px;
-    }
-}
-
-@media (min-width: 1441px){
-    .resultados-y-sumario{
-        padding: 300px 0px;
-    }
-
-    .resultados-y-sumario .resultados{
-        max-width: 500px;
-        padding: 50px;
-    }
-
-    .resultados-y-sumario .resultados .titulo{
-        font-size: 30px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje{
-        width: 250px;
-        height: 250px;
-        margin: 40px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje h1{
-        font-size: 96px;
-    }
-
-    .resultados-y-sumario .resultados .porcentaje .porcentaje-limite{
-        font-size: 24px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado{
-        font-size: 28px;
-    }
-
-    .resultados-y-sumario .resultados .informe-resultado h3{
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .resultados-y-sumario .sumario{
-        max-width: 500px;
-        padding: 40px;
-    }
-
-    .resultados-y-sumario .sumario .titulo{
-        font-size: 30px;
-    }
-
-    .resultados-y-sumario .sumario .estado{
-        margin: 20px 0px;
-        padding: 10px 0px;
-        height: 70px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado{
-        font-size: 26px;
-    }
-
-    .resultados-y-sumario .sumario .estado .titulo-estado .foto-titulo-estado{
-        width: 30px;
-    }
-    
-    .resultados-y-sumario .sumario .estado .titulo-estado .titulo-estado-descripcion{
-        margin-left: 20px;
-    }
-
-    .resultados-y-sumario .sumario .estado .valor{
-        font-size: 22px;
-    }
-
-    .resultados-y-sumario .sumario .boton-continuar{
-        margin-top: 50px;
-        padding: 20px;
         font-size: 20px;
     }
 }
