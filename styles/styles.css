@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    font-family: "Hanken Grotesk";
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%!important;
+    height: 100vh!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .resultados-y-sumario{
+        flex-direction: column;
+        align-items: center;
+        width: auto!important;
+        height: auto!important;
+    }
+}
+
+.resultados-y-sumario{
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgb(216, 216, 216);
+    width: 500px; /*de momento fijo*/
+    height: 350px; /*de momento fijo*/
+    border-radius: 20px;
+}
+
+/*-------SECCIÓN RESULTADOS-------*/
+
+.resultados-y-sumario .resultados{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /*de momento fijo*/
+}
+
+.resultados-y-sumario .resultados .titulo{
+    margin: 20px;
+    font-size: 18px; /*de momento fijo*/
+}
+
+.resultados-y-sumario .resultados .porcentaje-circulo{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container{
+    margin: auto;
+}
+
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container .porcentaje{
+    font-weight: 700;
+    font-size: 40px; /*de momento fijo*/
+    margin: 0px;
+}
+
+.resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container .porcentaje-limite{
+    font-size: 10px;
+    margin: 0px;
+}
+
+.resultados-y-sumario .resultados h1{
+    margin: 20px;
+    font-size: 22px; /*de momento fijo*/
+    font-weight: 700;
+}
+
+.resultados-y-sumario .resultados .informe-resultado{
+    width: 175px;
+    font-size: 12px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+/*-------SECCIÓN SUMARIO-------*/
+
+.resultados-y-sumario .sumario{
+    width: 200px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados-y-sumario .sumario .titulo{
+    width: 100%;
+    font-size: 18px; /*de momento fijo*/
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.resultados-y-sumario .sumario .test{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.resultados-y-sumario .sumario .test .nombre-test{
+    display: flex;
+}
+
+.resultados-y-sumario .sumario .test .nombre-test .test-icono{
+    padding-right: 5px;
+}
+
+.resultados-y-sumario .sumario .test .nombre-test p{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.resultados-y-sumario .sumario .test .puntaje{
+    font-weight: 500;
+    color: grey;
+    text-align: right;
+    margin: 0px;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.resultados-y-sumario .sumario .test .puntaje span{
+    color: black;
+}
+
+.resultados-y-sumario .sumario .reaccion{
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .memoria{
+    background-color: rgba(255, 196, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .verbal{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.resultados-y-sumario .sumario .visual{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.resultados-y-sumario .sumario .reaccion .nombre-test-reaccion{
+    color: rgb(255, 85, 85);
+}
+
+.resultados-y-sumario .sumario .memoria .nombre-test-memoria{
+    color: rgb(252, 182, 47);
+}
+
+.resultados-y-sumario .sumario .verbal .nombre-test-verbal{
+    color: rgb(0, 187, 143);
+}
+
+.resultados-y-sumario .sumario .visual .nombre-test-visual{
+    color: rgb(47, 64, 216);
+}
+
+.resultados-y-sumario .sumario .boton-continuar{
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(11, 0, 63);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.resultados-y-sumario .sumario .boton-continuar p{
+    margin: 0px;
+}
+
+/*------CREDITOS------*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
