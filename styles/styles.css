@@ -12,16 +12,28 @@ body {
     height: 100vh!important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .resultados-y-sumario{
         flex-direction: column;
         align-items: center;
-        width: auto!important;
-        height: auto!important;
+        width: 100%!important;
+        height: 100%!important;
+    }
+
+    .resultados-y-sumario .resultados{
+        width: 100%!important;
+    }
+
+    .resultados-y-sumario .resultados .titulo{
+        margin-bottom: 10px!important;
+    }
+
+    .resultados-y-sumario .sumario{
+        width: 90%!important;
     }
 }
 
@@ -29,8 +41,8 @@ body {
     display: flex;
     justify-content: center;
     box-shadow: 5px 5px 20px rgb(216, 216, 216);
-    width: 500px; /*de momento fijo*/
-    height: 350px; /*de momento fijo*/
+    width: 500px;
+    height: 350px;
     border-radius: 20px;
 }
 
@@ -43,12 +55,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px; /*de momento fijo*/
+    width: 250px;
 }
 
 .resultados-y-sumario .resultados .titulo{
     margin: 20px;
-    font-size: 18px; /*de momento fijo*/
+    font-size: 18px;
 }
 
 .resultados-y-sumario .resultados .porcentaje-circulo{
@@ -68,7 +80,7 @@ body {
 
 .resultados-y-sumario .resultados .porcentaje-circulo .porcentaje-container .porcentaje{
     font-weight: 700;
-    font-size: 40px; /*de momento fijo*/
+    font-size: 40px;
     margin: 0px;
 }
 
@@ -79,7 +91,7 @@ body {
 
 .resultados-y-sumario .resultados h1{
     margin: 20px;
-    font-size: 22px; /*de momento fijo*/
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -103,7 +115,7 @@ body {
 
 .resultados-y-sumario .sumario .titulo{
     width: 100%;
-    font-size: 18px; /*de momento fijo*/
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
     text-align: left;
