@@ -203,6 +203,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .resultados-y-sumario .sumario .boton-continuar p{
